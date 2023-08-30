@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #1f1f1f; /* Gris similar al de la interfaz de Chat GPT */
+    color: #020202; /* Texto en color blanco */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Products {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.Products ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Products li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #686868; /* Borde alrededor de cada producto */
+    background-color: #a1a1a1; /* Fondo blanco para cada producto */
+}
+
+.Products img {
+    width: 50px; /* Tamaño ajustado */
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre imagen y texto */
+    max-height: 50px; /* Altura máxima para evitar imágenes grandes */
+    transition: transform 0.2s ease-in-out;
+}
+
+.Products img:hover {
+    transform: scale(1.1); /* Efecto de resaltado al pasar el mouse */
+}
+
+.product-name {
+    font-size: 16px; /* Tamaño de la fuente de los productos */
+    font-weight: bold;
+    color: #181818;
+    padding: 0% 10% 0% 10%;
+}
+
+.product-price {
+    font-size: 14px; /* Tamaño de la fuente de los Precios de los productos */
+    color: #181818;
+}
+
+.cart-container img {
+    width: 60px; /* Tamaño ajustado */
+    max-height: 60px; /* Altura máxima para evitar imágenes grandes en el carrito */
+}
+
+.add-button {
+    padding: 5px 10px;
+    background-color: #66cdaa; /* Botón verde agua */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-button:hover {
+    background-color: #20b2aa; /* Color más oscuro al pasar el mouse */
+}
+
+.cart-container {
+    flex: 1;
+    margin-left: 20px; /* Espacio entre la lista de productos y el carrito */
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff; /* Fondo blanco para el carrito */
+}
+
+.cart-container h2 {
+    margin-top: 0;
+}
+
+.cart-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-container li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.cart-container span {
+    flex-grow: 1;
+}
+
+.remove-button {
+    padding: 2px 8px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
+
+#clear-button {
+    padding: 5px 10px;
+    background-color: #dc3545; /* Rojo para el botón de vaciar carrito */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#clear-button:hover {
+    background-color: #c82333; /* Color más oscuro al pasar el mouse */
+}
+
+p {
+    padding: 0px 15px 0px 15px;
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilo para el formulario de React */
+#form {
+    background-color: #f0f0f0; /* Gris claro */
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
